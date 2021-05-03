@@ -8,6 +8,7 @@
         <UL>
 	  {% for state in statelist.values()|sort(attribute="name") %}
             <LI>State: {{ state.id }}: <B>{{ state.name }}</B></LI>
+	    {% endfor %}
         </UL>
     </BODY>
 </HTML>

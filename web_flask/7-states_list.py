@@ -16,7 +16,7 @@ def state_list():
 
 
 @app.teardown_appcontext
-def teardown():
+def teardown(context):
     """ runs when app is done"""
     storage.close()
 
